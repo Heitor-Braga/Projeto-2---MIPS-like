@@ -1,0 +1,32 @@
+input
+upcode register value
+0010   24-27	23-00
+
+save
+upcode register address (register)
+0011
+28-31  27-24    23-20
+
+jump
+upcode
+0100 address
+31-28 27-0
+
+jmi
+upcode
+0101 register value address
+31-28 27-24   23-20  19-0
+
+mult
+0110 register register register
+
+load
+0111  register address (register)
+31-28 27-24    23-20 
+
+input_r
+1000 	rd 	rs
+31-28   27-24   23-20
+
+
+
